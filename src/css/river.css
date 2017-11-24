@@ -1,0 +1,225 @@
+/* 
+================================
+      River Style Sheet
+      v 0.1 on Nov. 23th
+================================
+*/
+
+/* Global Style Setting  */
+body {
+  background-color: #F3F3F3;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: Microsoft YaHei,"Open Sans",Arial,sans-serif;
+}
+
+.form-control,
+.input-group-addon,
+.navbar,
+.navbar.alert {
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+/* Link Style  */
+
+a {
+  color: #2CA8FF; }
+  a:hover, a:focus {
+    color: #109CFF;
+    text-decoration: none; }
+
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  outline: 0;
+}
+
+/* Button Styles */
+.btn {
+  border-width: 2px;
+  background-color: transparent;
+  font-weight: 400;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  padding: 8px 16px;
+  border-color: #888888;
+  color: #888888;
+}
+
+
+/* Navbar settings */
+
+.navbar {
+  border: 0;
+  font-size: 16px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+.navbar-default {
+  color: #FFFFFF;
+  background-color: rgba(59, 154, 235, 0.96);
+  box-shadow: 0, 1px, 1px, rgba(0,0,0,.1)
+}
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+.navbar-default > li > a {
+  background-color: transparent;
+  color: #FFFFFF;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a {
+  background-color: transparent;
+  text-decoration: bold;
+  border-radius: 3px;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFFFFF;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color:#FFFFFF;
+}
+
+.navbar-default > .active > a {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #2CA8FF;
+  opacity: 1;
+}
+
+/* Navbar transparent */
+.navbar-transparent {
+  color: #FFFFFF;
+  padding-top: 15px;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.navbar-transparent .navbar-brand {
+  color: #FFFFFF;
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+
+.navbar-transparent .navbar-brand:focus, .navbar-transparent .navbar-brand:hover,
+.navbar-transparent > li > a {
+  background-color: transparent;
+  color: #FFFFFF;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.navbar-transparent .navbar-nav > .active > a,
+.navbar-transparent .navbar-nav > li > a {
+  background-color: transparent;
+  text-decoration: bold;
+  border-radius: 3px;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.navbar-transparent .navbar-nav > .active > a:hover,
+.navbar-transparent .navbar-nav > li > a:hover {
+  color: #FFFFFF;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.navbar-transparent .navbar-nav > .active > a:focus,
+.navbar-transparent .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color:#FFFFFF;
+} 
+
+/* Nav bg-img */
+
+.blurred-container{
+  display: block;
+  position: relative;
+  width:100%;
+  height:540px;
+  top:0;
+  left:0;
+}
+
+.blurred-container > .img-src {
+  display: block;
+  background-attachment: scroll;
+  position: relative;
+  width:100%;
+  height:540px;
+  box-sizing: border-box;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+
+/* 
+   =============
+     Main area 
+   =============     
+*/
+
+/* Bootstrap overwrite   */
+
+.main{
+  display: block;
+  position: relative;
+}
+
+.parallax-pro .container {
+  padding-top: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* River Story Modules */
+
+.river-storycontainer {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.river-story {
+  margin-top: 1rem;
+}
+
+.river-story-time, .river-story-place {
+  font-size: 12px;
+  color: #A3a3a3;
+}
+
+.river-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
