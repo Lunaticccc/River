@@ -94,7 +94,7 @@ $(document).scroll(function() {
     }
 });
 
-/* Scoll Spy on blurred containner */
+/* Scoll Spy to Blur*/
 
 var transparentDemo = true;
 var fixedTop = false;
@@ -103,4 +103,11 @@ $(window).scroll(function(e) {
     oVal = ($(window).scrollTop() / 170);
     $(".blur").css("opacity", oVal);
     
+});
+
+
+/* Img Resizer */
+
+$(document).ready(function(){
+    $(".river-img").css(max-height, $(".river-storycontainer").height());
 });
