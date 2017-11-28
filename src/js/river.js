@@ -92,8 +92,19 @@ $(window).scroll(function(e) {
 });
 */
 
-/* Img Resizer */
-
+/* Test User Gendar */
 $(document).ready(function(){
-    $(".river-img").css(max-height, $(".river-storycontainer").height());
-});
+    if (getUserGendar() == "male") {
+        $('.isMale').show();
+        $('.isFemale').hide();
+    }
+    else if (getUserGendar() == "female") {
+        $('.isMale').hide();
+        $('.isFemale').show();
+    }
+    else return false;
+})
+
+function getUserGendar() {
+    
+}

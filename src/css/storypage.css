@@ -249,8 +249,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .river-user-avatar {
   margin-right: 1rem;
-  max-width: 100px;
-  max-height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .river-user-info {
