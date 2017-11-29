@@ -27,7 +27,6 @@ $(document).ready(function(){
     
     $('[data-toggle="gsdk-collapse"]').hover(
     function(){
-            console.log('on hover');
             var thisdiv = $(this).attr("data-target");
 
             if(!$(this).hasClass('state-open')){
@@ -103,8 +102,44 @@ $(document).ready(function(){
         $('.isFemale').show();
     }
     else return false;
-})
+});
 
 function getUserGendar() {
     
 }
+
+/* Main Page Story Collapser*/
+$(document).ready(function(){
+    $('.is-collapsed').click(function(){
+        var getContent = this;
+        $(this).removeClass('is-collapsed');
+        $('.btn-dropdown').css({
+            'display': 'none',
+        });
+        $('.btn-collapse').css({
+            'display': 'inline',
+        })
+    });
+
+    if (user.isLogged) {
+        $('.isUnlogged').ready(function(){
+            $(this).addClass('isLogged');
+            $(this).removeClass('.isUnlogged');
+        });
+    }
+});
+
+/*
+function collapse(){
+    $('.btn-collapse').click(function(){
+        $(this).parent().addClass('is-collapsed');
+        $('.btn-dropdown').css({
+            'display': 'inline',
+        });
+        $('.btn-collapse').css({
+            'display': 'none',
+        });
+    });
+}
+*/
+

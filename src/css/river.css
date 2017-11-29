@@ -132,6 +132,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   opacity: 1;
 }
 
+
 /* Navbar transparent */
 .navbar-transparent {
   color: #FFFFFF;
@@ -217,6 +218,23 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
+/* Navbar Log in */
+.navbar-nav > li > .nav-user-content {
+  margin: 10px 32px 10px 10px;
+  padding: 0;
+}
+
+.nav-user-avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-nav > li > .btn .btn-round .btn-neutral {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin-top: 14px;
+}
+
 /* Nav bg-img */
 
 .blurred-container{
@@ -286,4 +304,43 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   position: relative;
   margin-top: 2rem;
   max-width: 100%;
+}
+
+.is-collapsed {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.is-collapsed:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-dropdown {
+  display: inline;
+  text-align: right;
+}
+
+.btn-collapse {
+  display: inline;
+}
+
+/*  Sidebar Logged & Unlogged  */
+.isUnlogged {
+  display: block !important;
+}
+
+.btn-write,
+.btn-write:hover,
+.btn-write:focus, 
+.btn-write:active {
+  display: block;
+  border: 0;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #0571B9;
+}
+
+.isLogged {
+  display: none !important;
 }
