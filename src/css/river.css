@@ -88,6 +88,13 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   -webkit-transition: all 0.4s;
 }
 
+.navbar-transparent .btn-neutral,
+.btn-neutral {
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
 /* Navbar default */
 .navbar-default {
   color: #FFFFFF;
@@ -287,6 +294,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   text-align: left;
 }
 
+.story-user-info {
+  margin-bottom: 1rem;
+}
+
 .river-story {
   margin-top: 1rem;
 }
@@ -325,11 +336,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   display: inline;
 }
 
-/*  Sidebar Logged & Unlogged  */
-.isUnlogged {
-  display: block !important;
-}
-
 .btn-write,
 .btn-write:hover,
 .btn-write:focus, 
@@ -339,6 +345,22 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   width: 100%;
   color: #FFFFFF;
   background-color: #0571B9;
+}
+
+.story-user-avatar {
+  height: 50px;
+  width: 50px;
+}
+
+.story-user-name {
+  display: inline;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*  Sidebar Logged & Unlogged  */
+.isUnlogged {
+  display: block !important;
 }
 
 .isLogged {
