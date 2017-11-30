@@ -16,6 +16,35 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
   font-family: Microsoft YaHei,"Open Sans",Arial,sans-serif;
 }
 
+/* Text Editor  */
+#editor {
+	max-height: 250px;
+	height: 250px;
+	background-color: white;
+	border-collapse: separate; 
+	border: 1px solid rgb(204, 204, 204); 
+	padding: 4px; 
+	box-sizing: content-box; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+	overflow: scroll;
+	outline: none;
+}
+
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-menu a {
+  cursor: pointer;
+}
+
+
 .form-control,
 .input-group-addon,
 .navbar,
@@ -298,6 +327,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   margin-bottom: 1rem;
 }
 
+.story-user-info > a {
+  color: inherit;
+}
+
 .river-story {
   margin-top: 1rem;
 }
@@ -338,8 +371,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .btn-write,
 .btn-write:hover,
-.btn-write:focus, 
-.btn-write:active {
+.btn-write:focus {
   display: block;
   border: 0;
   width: 100%;
@@ -354,7 +386,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .story-user-name {
   display: inline;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 

@@ -91,7 +91,7 @@ $(window).scroll(function(e) {
 });
 */
 
-/* Test User Gendar */
+/* Test User Gendar 
 $(document).ready(function(){
     if (getUserGendar() == "male") {
         $('.isMale').show();
@@ -103,10 +103,7 @@ $(document).ready(function(){
     }
     else return false;
 });
-
-function getUserGendar() {
-    
-}
+*/
 
 /* Main Page Story Collapser*/
 $(document).ready(function(){
@@ -121,12 +118,7 @@ $(document).ready(function(){
         })
     });
 
-    if (user.isLogged) {
-        $('.isUnlogged').ready(function(){
-            $(this).addClass('isLogged');
-            $(this).removeClass('.isUnlogged');
-        });
-    }
+    $('#editor').wysiwyg();
 });
 
 /*
