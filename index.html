@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="src/css/btn.css">
     <link rel="stylesheet" href="src/css/river.css">
     <link rel="stylesheet" href="src/css/river-card.css">
+    <link rel="stylesheet" href="src/css/temp.css">
 
     <!-- IE 8 support -->
     <!--[if lt IE 9]>
@@ -50,10 +51,12 @@
                     </div> 
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="isLogged"><a href="#" class="nav-user-content">
-                      <img class="nav-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
-                      &nbsp;userName</a></li>                                
-                    <li class="isUnlogged"><button href="#" class="btn btn-round btn-neutral">Sign in</button></li>
+                  <!-- 已登录 -->
+                  <li class=""><a href="#" class="nav-user-content">
+                    <img class="nav-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
+                    &nbsp;userName</a></li>
+                  <!-- 未登录 -->                                  
+                  <li class="isLogged"><button href="#" class="btn btn-round btn-neutral">Sign in</button></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -93,7 +96,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="river-card-container isUnlogged">
+            <!-- 未登录  -->
+            <div class="river-card-container isLogged">
               <div class="river-card-title">你好，陌生人！愿意讲个故事吗？</div>
               <button type="button" class="btn btn-write">写故事</button>
               <hr />
@@ -103,8 +107,37 @@
               <div class="river-card-title">随便逛逛</div>
               <button type="button" class="btn btn-write">热门</button>
             </div>
-            <div class="river-card-container isLogged">
-              <div> TODO </div>
+            <!-- 已登录 -->
+            <div class="river-card-container">
+                <div class="river-card-head">我的</div>
+                <div class="river-card-section">
+                  <a href="">
+                    <img class="river-user-avatar" src="src/img/user-avatar/0000.jpg" alt="user" />
+                  </a>
+                  <div class="river-user-info">
+                    <a href="">
+                    <div class="river-user-name">Newbee_Hao
+                      <i class="glyphicon glyphicon-map-marker"></i>
+                      <i class="glyphicon glyphicon-map-marker"></i>
+                    </div>
+                    </a>
+                    <div class="river-user-descrb">给我幽鬼，不赢砍手！</div>
+                  </div>
+                </div>
+                <p class="river-place"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;阿尔及利亚 伊利里亚</p>
+                <p class="river-date"><i class="glyphicon glyphicon-calendar"></i>&nbsp;<time>1996/12/21</time></p>
+              </div>
+            <div class="river-card-container">
+              <div class="card-flex-container">
+                <div class="card-iconleft">
+                  <i class="glyphicon glyphicon-pencil"></i>
+                  <button type="button" class="btn btn-simple">写故事</button>
+                </div>
+                <div class="card-iconright">
+                  <i class="glyphicon glyphicon-book"></i>
+                  <button type="button" class="btn btn-simple">读故事</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

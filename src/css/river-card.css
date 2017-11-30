@@ -40,3 +40,36 @@
 .river-card-container > hr {
   margin: 1.5rem 0 0.5rem 0;
 }
+
+.card-flex-container {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-iconleft,
+.card-iconright {
+  padding: 2rem 2rem;
+}
+
+.card-iconleft > i {
+  color: #ffcf00;
+}
+
+.card-iconleft > .btn-simple:hover,
+.card-iconleft > .btn-simple:focus,
+.card-iconleft > .btn-simple:active {
+  color: #ffcf00;
+}
+
+.card-iconright > i {
+  color: #43d480;
+}
+
+.card-iconright > .btn-simple:hover,
+.card-iconright > .btn-simple:focus,
+.card-iconright > .btn-simple:active {
+  color: #43d480;
+}

@@ -1,0 +1,41 @@
+.river-user-avatar {
+  margin-right: 1rem;
+  width: 80px;
+  height: 80px;
+}
+
+.river-user-info {
+  -webkit-box-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.river-user-name {
+  font-size: 20px;
+  font-weight: 600;
+  font-synthesis: style;
+  line-height: 30px;
+  color: #1e1e1e;
+}
+
+.river-user-descrb {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.river-user-name, .river-user-descrb {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.river-user-stories > a {
+  color: #262626;
+  opacity: 1;
+  border: 0;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.9);
+}
+
+.river-user-stories > a:hover {
+  opacity: 0.5;
+}
