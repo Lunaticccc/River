@@ -1,7 +1,7 @@
 {
   "user": {
     "user-id": "0001",
-    "user-name": "Adios_Mu",
+    "user-name": "Aiolos_Mu",
     "user-password": "123123qwe",
     "hasAvatar": true,
     "user-avatar": "../img/user-avatar/0001.jpg",
@@ -9,6 +9,6 @@
     "user-birthday": "1994/06/21",
     "user-gender": "male",
     "user-descrb": "My name is MU！",
-    "user-stories": ["0001", "0002"]
+    "user-stories": ["0002"]
   }
 }

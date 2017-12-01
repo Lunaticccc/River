@@ -16,6 +16,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
   font-family: Microsoft YaHei,"Open Sans",Arial,sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
 /* Text Editor  */
 #editor {
 	max-height: 250px;
@@ -79,9 +83,9 @@ div[data-role="editor-toolbar"] {
 
 /* Link Style  */
 
-a {
-  color: #2CA8FF; }
-  a:hover, a:focus {
+footer > p > a { color: #2CA8FF; }
+footer > p > a:hover,
+footer > p > a:focus {
     color: #109CFF;
     text-decoration: none; }
 
@@ -166,6 +170,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-radius: 3px;
   color: #2CA8FF;
   opacity: 1;
+}
+
+.navbar-header > .navbar-toggle, 
+.navbar-header > .navbar-toggle:hover,
+.navbar-header > .navbar-toggle:focus,
+.navbar-header > .navbar-toggle:active {
+  background-color: transparent;
+  border: 0;
 }
 
 
@@ -269,6 +281,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   color: #FFFFFF;
   border-color: #FFFFFF;
   margin-top: 14px;
+  margin-left: 10px;
 }
 
 /* Nav bg-img */
@@ -346,7 +359,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .river-img {
   position: relative;
-  margin-top: 2rem;
+  margin: 2rem auto 1rem auto;
   max-width: 100%;
 }
 

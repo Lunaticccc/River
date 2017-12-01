@@ -52,11 +52,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
 
 /* Link Style  */
 
-a {
-  color: #2CA8FF; }
-  a:hover, a:focus {
-    color: #109CFF;
-    text-decoration: none; }
+a { color: inherit; }
+a:hover, a:focus {
+  color: inherit;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+footer > p > a { color: #2CA8FF; }
+footer > p > a:hover,
+footer > p > a:focus {
+  color: #109CFF;
+  text-decoration: none;
+}
 
 a:focus, a:active,
 button::-moz-focus-inner,
@@ -68,6 +76,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   outline: 0;
 }
 
+
 .navbar {
   border: 0;
   font-size: 16px;
@@ -75,12 +84,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   -webkit-transition: all 0.4s;
 }
 
-/* Navbar default */
-.navbar {
+.navbar-header > .navbar-toggle, 
+.navbar-header > .navbar-toggle:hover,
+.navbar-header > .navbar-toggle:focus,
+.navbar-header > .navbar-toggle:active {
+  background-color: transparent;
   border: 0;
-  font-size: 16px;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
 }
 
 .navbar-transparent .btn-neutral,
@@ -226,8 +235,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   margin-top: 1rem;
 }
 
-.river-story-collapsed {
+.river-story-info {
   margin-top: 1rem;
+}
+
+.river-story-collapsed {
+
   max-height: 4rem;
   overflow: hidden;
 }
@@ -244,7 +257,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .river-img {
   position: relative;
-  margin-top: 2rem;
+  margin: 2rem auto 1rem auto;
   max-width: 100%;
 }
 
@@ -334,3 +347,5 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .story-user-info {
   margin-bottom: 1rem;
 }
+
+.river-story-collapsed
