@@ -76,6 +76,21 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 /* Navbar default */
+.navbar {
+  border: 0;
+  font-size: 16px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+.navbar-transparent .btn-neutral,
+.btn-neutral {
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/* Navbar default */
 .navbar-default {
   color: #FFFFFF;
   background-color: rgba(59, 154, 235, 0.96);
@@ -118,6 +133,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   color: #2CA8FF;
   opacity: 1;
 }
+
 /* Navbar Search & Toggle*/
 .navbar-form {
   margin-top: 10px;
@@ -163,6 +179,23 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   color: #FFFFFF;
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Navbar Log in */
+.navbar-nav > li > .nav-user-content {
+  margin: 10px 32px 10px 10px;
+  padding: 0;
+}
+
+.nav-user-avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-nav > li > .btn .btn-round .btn-neutral {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin-top: 14px;
 }
 
 /* Bootstrap overwrite   */
@@ -285,4 +318,19 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .river-user-stories > a:hover {
   opacity: 0.5;
+}
+
+.story-user-avatar {
+  height: 50px;
+  width: 50px;
+}
+
+.story-user-name {
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.story-user-info {
+  margin-bottom: 1rem;
 }

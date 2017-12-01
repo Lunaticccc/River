@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="src/css/river.css">
     <link rel="stylesheet" href="src/css/river-card.css">
     <link rel="stylesheet" href="src/css/temp.css">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet"> 
 
     <!-- IE 8 support -->
     <!--[if lt IE 9]>
@@ -48,11 +47,11 @@
               </form>
               <ul class="nav navbar-nav navbar-right">
                 <!-- 已登录 -->
-                <li class=""><a href="#" class="nav-user-content">
+                <li class="isLogged"><a href="#" class="nav-user-content">
                   <img class="nav-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
-                  &nbsp;userName</a></li>
+                  &nbsp;Newbee_Hao</a></li>
                 <!-- 未登录 -->                                  
-                <li class="isLogged"><button href="#" class="btn btn-round btn-neutral">Sign in</button></li>
+                <li class="isUnlogged"><button href="#" class="btn btn-round btn-neutral">Sign in</button></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -72,7 +71,7 @@
             <div class="river-storycontainer ">
               <div class="story-user-info">
               <a href="#"><img class="story-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
-                <div class="story-user-name">&nbsp;userName</div>
+                <div class="story-user-name">&nbsp;Newbee_Hao</div>
               </a>
 
               </div>
@@ -88,7 +87,7 @@
                   <button type="button" class="btn btn-simple btn-dropdown"><i></i>展开</button>
                 </p>
                 <div class="river-imgcontainer">
-                  <a href="#"><img class="river-img" src="src/img/storyimg/0000.jpg" alt="story image"/></a>            
+                  <img class="river-img" src="src/img/storyimg/0000.jpg" alt="story image"/>            
                 </div>
 <!--            <button type="button" class="btn btn-simple btn-collaspse" onclick="collapse()"><i></i>收起</button>   -->
               </div>
@@ -96,7 +95,7 @@
           </div>
           <div class="col-md-4">
             <!-- 未登录  -->
-            <div class="river-card-container isLogged">
+            <div class="river-card-container isUnogged">
               <div class="river-card-title">你好，陌生人！愿意讲个故事吗？</div>
               <button type="button" class="btn btn-write write" 
                       data-toggle="modal" data-target="#write-story">
@@ -109,7 +108,7 @@
               <button type="button" class="btn btn-write">热门</button>
             </div>
             <!-- 已登录 -->
-            <div class="river-card-container">
+            <div class="river-card-container isLogged">
                 <div class="river-card-head">我的</div>
                 <div class="river-card-section">
                   <a href="">
@@ -128,7 +127,7 @@
                 <p class="river-place"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;阿尔及利亚 伊利里亚</p>
                 <p class="river-date"><i class="glyphicon glyphicon-calendar"></i>&nbsp;<time>1996/12/21</time></p>
               </div>
-            <div class="river-card-container">
+            <div class="river-card-container isLogged">
               <div class="card-flex-container">
                 <div class="card-iconleft">
                   <i class="glyphicon glyphicon-pencil"></i>
@@ -148,7 +147,7 @@
             <div class="river-storycontainer ">
               <div class="story-user-info">
                 <a href="#"><img class="story-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
-                  <div class="story-user-name">&nbsp;userName</div>
+                  <div class="story-user-name">&nbsp;Newbee_Hao</div>
                 </a>
               </div>
               <div class="river-story-time"><i class="glyphicon glyphicon-user"></i><time>&nbsp;2017/11/23 13:25</time></div>
@@ -163,7 +162,7 @@
                   <button type="button" class="btn btn-simple btn-dropdown"><i></i>展开</button>
                 </p>
                 <div class="river-imgcontainer">
-                  <a href="#"><img class="river-img" src="src/img/storyimg/0000.jpg" alt="story image"/></a>            
+                  <img class="river-img" src="src/img/storyimg/0000.jpg" alt="story image"/>
                 </div>
 <!--            <button type="button" class="btn btn-simple btn-collaspse" onclick="collapse()"><i></i>收起</button>   -->
               </div>
@@ -193,19 +192,19 @@
           <div class="modal-body">
             <div id="alerts"></div>
             <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">   
-              <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="icon-picture"></i></a>
-              <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+              <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="glyphicon glyphicon-picture"></i></a>
+          <!--    <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />   -->
               <div class="btn-group">
-                <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
-                <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+                <a class="btn btn-river" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="btn btn-river" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="glyphicon glyphicon-chevron-right"></i></a>
               </div>
-              <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
             </div>
-            <div id="editor"></div>
+            <div id="editor">TODO</div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-            <button type="button" class="btn btn-primary">保存</button>
+            <div id="editor-msg" style="color:#43d480"></div>
+            <button type="button" class="btn btn-river" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-river">保存</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal -->

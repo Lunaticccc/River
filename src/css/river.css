@@ -398,3 +398,17 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .isLogged {
   display: none !important;
 }
+
+
+/* Editor */
+.btn-toolbar {
+  margin-bottom: 1rem;
+}
+
+.btn-toolbar > .btn,
+.btn-toolbar > .btn-group > .btn,
+.modal-footer > .btn {
+  border-width: 1px;
+  border-color: #2CA8FF;
+  color: #2CA8FF;
+}
