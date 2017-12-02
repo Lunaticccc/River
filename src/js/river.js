@@ -27,7 +27,6 @@ $(document).ready(function(){
     
     $('[data-toggle="gsdk-collapse"]').hover(
     function(){
-            console.log('on hover');
             var thisdiv = $(this).attr("data-target");
 
             if(!$(this).hasClass('state-open')){
@@ -80,20 +79,18 @@ $(function () {
     
 });
 
-/* Scoll Spy to Blur 
-
-var transparentDemo = true;
-var fixedTop = false;
-
-$(window).scroll(function(e) {
-    oVal = ($(window).scrollTop() / 170);
-    $(".blur").css("opacity", oVal);
-    
-});
-*/
-
-/* Img Resizer */
-
+/* Main Page Story Collapser*/
 $(document).ready(function(){
-    $(".river-img").css(max-height, $(".river-storycontainer").height());
+    $('.is-collapsed').click(function(){
+        var getContent = this;
+        $(this).removeClass('is-collapsed');
+        $('.btn-dropdown').css({
+            'display': 'none',
+        });
+        $('.btn-collapse').css({
+            'display': 'inline',
+        })
+    });
+
+    $('#editor').wysiwyg();
 });

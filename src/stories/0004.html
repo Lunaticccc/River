@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teresa的故事 - 河</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- River Stylesheet -->
+    <link rel="stylesheet" href="../css/btn.css">
+    <link rel="stylesheet" href="../css/storypage.css">
+
+    <!-- IE 8 support -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="navbar-full">
+      <div id="navbar">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">河</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="nav-button active"><a href="../../index.html">主页</a></li>
+                <li><a href="0004.html">热门</a></li>
+                <li>
+                  <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="glyphicon glyphicon-search"></i></a>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left navbar-search-form" role="search">                  
+                <div class="form-group">
+                  <input type="text" value="" class="form-control" placeholder="Search...">
+                </div> 
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <!-- 已登录 -->
+                <li class="isLogged"><a href="../users/0000.html" class="nav-user-content">
+                  <img class="nav-user-avatar img-rounded" src="../img/user-avatar/0000.jpg"/>
+                  &nbsp;Newbee_Hao</a></li>
+                <!-- 未登录 -->                                  
+                <li class="isUnlogged" style="display:none"><button href="#" class="btn btn-round btn-neutral">Sign in</button></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div><!--  end navbar -->
+    </div> <!-- end navBar -->
+    
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="river-storycontainer">
+              <div class="story-user-info">
+                <a href="../users/0000.html"><img class="story-user-avatar img-rounded" src="../img/user-avatar/0003.jpg"/>
+                  <div class="story-user-name">&nbsp;Teresa</div>
+                </a>
+              </div>
+              <div class="river-date"><i class="glyphicon glyphicon-user"></i><time>&nbsp;2013/11/16 14:16</time></div>
+              <div class="river-place"><i class="glyphicon glyphicon-map-marker"></i><span>&nbsp;美国 西雅图</span></div>
+                <p class="river-story">
+                  不敢用的香皂<br />Handmade Sea Soap<br />创作人：Thecharmingfrog
+                </p>
+                <img class="img-rounded img-responsive river-img" src="../img/storyimg/0004.jpg" alt="story image"/>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="river-card-container">
+              <div class="river-card-head">作者信息</div>
+              <div class="river-card-section">
+                <a href="../users/0000.html">
+                  <img class="river-user-avatar img-rounded" src="../img/user-avatar/0003.jpg" alt="user" />
+                </a>
+                <div class="river-user-info">
+                  <a href="../users/0000.html">
+                  <div class="river-user-name">Teresa
+                  <!-- <i class="glyphicon glyphicon-map-marker"></i>
+                    <i class="glyphicon glyphicon-map-marker"></i> -->
+                  </div>
+                  </a>
+                  <div class="river-user-descrb">说你爱我，假的也行</div>
+                </div>
+              </div>
+              <p class="river-place"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;加拿大 多伦多</p>
+              <p class="river-date"><i class="glyphicon glyphicon-calendar"></i>&nbsp;<time>1992/06/26</time></p>
+            </div>
+            <div class="river-card-container">
+              <div class="river-card-head user-male">他的其他故事</div>
+              <div class="river-card-head user-female hide">她的其他故事</div>
+              <div class="river-user-stories">
+                <div class="river-story-info">
+                  <p>这是一个没有其他故事的女同学…</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="container footer">
+      <div class="row">
+        <footer>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&nbsp;River - 2017 &middot; <a href="#">Contact us</a></p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../jquery/jquery.js"></script>
+    <script src="../../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/switch.js"></script>
+    <script src="../js/river.js"></script>
+  </body>
+</html>

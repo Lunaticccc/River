@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aiolos_Mu的主页 - 河</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- River Stylesheet -->
+    <link rel="stylesheet" href="../css/btn.css">
+    <link rel="stylesheet" href="../css/river.css">
+    <link rel="stylesheet" href="../css/userpage.css">
+    <link rel="stylesheet" href="../css/river-card.css">
+
+    <!-- IE 8 support -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="navbar-full">
+      <div id="navbar">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">河</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="nav-button active"><a href="../../index.html">主页</a></li>
+                <li><a href="../stories/0004.html">热门</a></li>
+                <li>
+                  <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="glyphicon glyphicon-search"></i></a>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left navbar-search-form" role="search">                  
+                <div class="form-group">
+                  <input type="text" value="" class="form-control" placeholder="Search...">
+                </div> 
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <!-- 已登录 -->
+                <li class=""><a href="../users/0000.html" class="nav-user-content">
+                  <img class="nav-user-avatar img-rounded" src="../img/user-avatar/0000.jpg"/>
+                  &nbsp;Newbee_Hao</a></li>
+                <!-- 未登录 -->                                  
+                <li class="isLogged" style="display:none"><button href="#" class="btn btn-round btn-neutral">Sign in</button></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div><!--  end navbar -->
+    </div> <!-- end navBar -->
+    
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="river-card-container">
+                <button type="button" class="btn btn-write write" 
+                data-toggle="modal" data-target="#write-story">
+                写故事</button> 
+            </div>
+            <div class="river-storycontainer ">
+              <div class="story-user-info">
+                <img class="story-user-avatar img-rounded" src="../img/user-avatar/0001.jpg"/>
+                <div class="story-user-name">&nbsp;Aiolos_Mu</div>
+              </div>
+              <div class="river-story-time"><i class="glyphicon glyphicon-user"></i><time>&nbsp;2017/11/23 13:25</time></div>
+              <div class="river-story-place"><i class="glyphicon glyphicon-map-marker"></i><span>&nbsp;列支敦士登，瓦杜兹</span></div>
+              <div class="river-story-content is-collapsed">
+                <p class="river-story">
+                  我时常回想学校门口夜市的繁华景象<br />以及种种我留恋的味道<br />每次捧着热乎乎的炸土豆<br />穿过喧闹的夜市<br />心里都洋溢着极大的满足感<br /><br />两个土豆洗净切块泡水去淀粉；<br />油热下土豆炸熟后捞出；<br />洋葱切末，黄瓜切丝（洋葱可以下油炸一下）；<br />沥干油的土豆、洋葱末、黄瓜丝一起放入锅中，加入孜然粉辣椒粉和适量盐翻炒；<br />出锅，开吃～<br />ps：可以沾甜辣酱沙拉酱或者番茄酱吃，我最喜欢甜辣酱～<br />
+                  <button type="button" class="btn btn-simple btn-dropdown"><i></i>展开</button>
+                </p>
+                <div class="river-imgcontainer">
+                  <img class="river-img" src="../img/storyimg/0002.jpg" alt="story image"/>
+                </div>
+<!--            <button type="button" class="btn btn-simple btn-collaspse" onclick="collapse()"><i></i>收起</button>   -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="river-card-container">
+              <div class="river-card-head">个人信息
+                <button class="btn btn-simple hide">修改</button>
+              </div>
+              <div class="river-card-section">
+                <img class="river-user-avatar-sm" src="../img/user-avatar/0001.jpg" alt="user" />
+                <div class="river-user-info">
+                  <div class="river-user-name">Aiolos_Mu</div>
+                  <div class="river-user-descrb">My name is MU！</div>
+                </div>
+              </div>
+                <p class="river-place"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;中国 上海</p>
+                <p class="river-date"><i class="glyphicon glyphicon-calendar"></i>&nbsp;<time>1994/06/21</time></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="container footer">
+      <div class="row">
+        <footer>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&nbsp;River - 2017 &middot; <a href="#">Contact us</a> &middot; <a href="#">License</a></p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- 输入 -->
+    <div class="modal fade" id="write-story" tabindex="-1" role="dialog" aria-labelledby="write" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="write">写故事</h4>
+          </div>
+          <div class="modal-body">
+            <div id="alerts"></div>
+            <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">   
+              <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="glyphicon glyphicon-picture"></i></a>
+          <!--    <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />   -->
+              <div class="btn-group">
+                <a class="btn btn-river" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="btn btn-river" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="glyphicon glyphicon-chevron-right"></i></a>
+              </div>
+            </div>
+            <div id="editor">TODO</div>
+          </div>
+          <div class="modal-footer">
+            <div id="editor-msg" style="color:#43d480"></div>
+            <button type="button" class="btn btn-river" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-river">保存</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div>
+    <script src="../../jquery/jquery.js"></script>
+    <script src="../../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="src/js/jquery.hotkeys.js"></script>
+    <script src="src/js/editor.js"></script>
+    <script src="../js/switch.js"></script>
+    <script src="../js/river.js"></script>
+  </body>
+</html>

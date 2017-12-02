@@ -16,6 +16,39 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
   font-family: Microsoft YaHei,"Open Sans",Arial,sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
+/* Text Editor  */
+#editor {
+	max-height: 250px;
+	height: 250px;
+	background-color: white;
+	border-collapse: separate; 
+	border: 1px solid rgb(204, 204, 204); 
+	padding: 4px; 
+	box-sizing: content-box; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+	overflow: scroll;
+	outline: none;
+}
+
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-menu a {
+  cursor: pointer;
+}
+
+
 .form-control,
 .input-group-addon,
 .navbar,
@@ -50,9 +83,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
 
 /* Link Style  */
 
-a {
-  color: #2CA8FF; }
-  a:hover, a:focus {
+footer > p > a { color: #2CA8FF; }
+footer > p > a:hover,
+footer > p > a:focus {
     color: #109CFF;
     text-decoration: none; }
 
@@ -86,6 +119,23 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   font-size: 16px;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
+}
+
+.navbar-transparent .btn-neutral,
+.btn-neutral {
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.navbar-transparent .btn-neutral:hover, 
+.navbar-transparent .btn-neutral:focus,
+.navbar-transparent .btn-neutral:active {
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  opacity: 1;
 }
 
 /* Navbar default */
@@ -131,6 +181,15 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   color: #2CA8FF;
   opacity: 1;
 }
+
+.navbar-header > .navbar-toggle, 
+.navbar-header > .navbar-toggle:hover,
+.navbar-header > .navbar-toggle:focus,
+.navbar-header > .navbar-toggle:active {
+  background-color: transparent;
+  border: 0;
+}
+
 
 /* Navbar transparent */
 .navbar-transparent {
@@ -217,27 +276,80 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-/* Nav bg-img */
-
-.blurred-container{
-  display: block;
-  position: relative;
-  width:100%;
-  height:540px;
-  top:0;
-  left:0;
+/* Navbar Log in */
+.navbar-nav > li > .nav-user-content {
+  margin: 10px 32px 10px 10px;
+  padding: 0;
 }
 
-.blurred-container > .img-src {
+.nav-user-avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-nav > li > .btn .btn-round .btn-neutral {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin-top: 14px;
+  margin-left: 10px;
+  opacity: 0.9;
+}
+
+
+.navbar-nav > li > .btn .btn-round .btn-neutral:hover, 
+.navbar-nav > li > .btn .btn-round .btn-neutral:focus,
+.navbar-nav > li > .btn .btn-round .btn-neutral:active {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin-top: 14px;
+  margin-left: 10px;
+  opacity: 1;
+}
+
+/* Nav bg-img */
+
+.header-container {
   display: block;
-  background-attachment: scroll;
   position: relative;
-  width:100%;
-  height:540px;
-  box-sizing: border-box;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position: center center;
+}
+
+.parallax {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+}
+.parallax > img {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+.header-container .container {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+}
+
+.header-content {
+  top: 42%;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.7;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.header-divider {
+  width: 20%;
 }
 
 /* 
@@ -269,6 +381,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   text-align: left;
 }
 
+.story-user-info {
+  margin-bottom: 1rem;
+}
+
+.story-user-info > a {
+  color: inherit;
+}
+
 .river-story {
   margin-top: 1rem;
 }
@@ -284,6 +404,147 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .river-img {
   position: relative;
-  margin-top: 2rem;
+  margin: 2rem auto 1rem auto;
   max-width: 100%;
+}
+
+.is-collapsed {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.is-collapsed:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-dropdown {
+  display: inline;
+  text-align: right;
+}
+
+.btn-collapse {
+  display: inline;
+}
+
+.btn-write,
+.btn-write:hover,
+.btn-write:focus {
+  display: block;
+  border: 0;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #0571B9;
+}
+
+.story-user-avatar {
+  height: 50px;
+  width: 50px;
+}
+
+.story-user-name {
+  display: inline;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*  Sidebar Logged & Unlogged  */
+.isUnlogged {
+  display: block !important;
+}
+
+.isLogged {
+  display: none !important;
+}
+
+
+/* Editor */
+.btn-toolbar {
+  margin-bottom: 1rem;
+}
+
+.btn-toolbar > .btn,
+.btn-toolbar > .btn-group > .btn,
+.modal-footer > .btn {
+  border-width: 1px;
+  border-color: #2CA8FF;
+  color: #2CA8FF;
+}
+
+/*login and sign-in modal*/
+.modal-body
+{
+  height:320px;
+}
+#login_submit,#go_reg,#zcsubmit,#go_log,#phint
+{
+  position:relative;
+  left:5%;
+  width:90%
+}
+#dlpage
+{
+  width:100%;
+  position:absolute;top:0;
+  height:200px;
+}
+#zcpage
+{
+  visibility:hidden;
+  width:100%;
+  position:absolute;top:0;
+  height:200px;
+}
+.pagecontainer
+{
+  position:relative;top:0;
+}
+
+.hint
+{
+  height: 20px;
+  width:90%;
+  position:relative;
+  left:26%;/*改了*/
+}
+.login_input
+{
+  position: relative;
+}
+.input_name
+{
+  background-color:white!important;
+  border:0;
+  font-size: 16px;
+  font-family: Microsoft YaHei,"Open Sans",Arial,sans-serif;
+}
+#regtext
+{
+  font-size: 15px;
+}
+#login_submit
+{
+  background-color:109CFF!important;
+}
+.btn-login
+{
+  border-width: 1px;
+  border-radius: 30px !important;
+  padding: 9px 18px;
+  background-color: #1C86EE;
+  color: white;
+}
+.btn-login:hover
+{
+  border-width: 1px;
+  border-radius: 30px !important;
+  padding: 9px 18px;
+  background-color: #104E8B;
+  color: white;
+}
+/*新增加了*/
+.signinput
+{
+	width:275px!important;
+	float:right!important;
 }

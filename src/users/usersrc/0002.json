@@ -1,0 +1,14 @@
+{
+  "user": {
+    "user-id": "0002",
+    "user-name": "iG.Zhou",
+    "user-password": "ssq123123123",
+    "hasAvatar": true,
+    "user-avatar": "../img/user-avatar/0002.jpg",
+    "user-home": "中国 上海",
+    "user-birthday": "1993/04/22",
+    "user-gender": "male",
+    "user-descrb": "没有我不敢接的团！",
+    "user-stories": ["0002"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "user": {
+    "user-id": "0001",
+    "user-name": "Aiolos_Mu",
+    "user-password": "123123qwe",
+    "hasAvatar": true,
+    "user-avatar": "../img/user-avatar/0001.jpg",
+    "user-home": "中国 上海",
+    "user-birthday": "1994/06/21",
+    "user-gender": "male",
+    "user-descrb": "My name is MU！",
+    "user-stories": ["0002"]
+  }
+}
