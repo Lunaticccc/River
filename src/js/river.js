@@ -79,32 +79,6 @@ $(function () {
     
 });
 
-/* Scoll Spy to Blur 
-
-var transparentDemo = true;
-var fixedTop = false;
-
-$(window).scroll(function(e) {
-    oVal = ($(window).scrollTop() / 170);
-    $(".blur").css("opacity", oVal);
-    
-});
-*/
-
-/* Test User Gendar 
-$(document).ready(function(){
-    if (getUserGendar() == "male") {
-        $('.isMale').show();
-        $('.isFemale').hide();
-    }
-    else if (getUserGendar() == "female") {
-        $('.isMale').hide();
-        $('.isFemale').show();
-    }
-    else return false;
-});
-*/
-
 /* Main Page Story Collapser*/
 $(document).ready(function(){
     $('.is-collapsed').click(function(){
@@ -120,18 +94,3 @@ $(document).ready(function(){
 
     $('#editor').wysiwyg();
 });
-
-/*
-function collapse(){
-    $('.btn-collapse').click(function(){
-        $(this).parent().addClass('is-collapsed');
-        $('.btn-dropdown').css({
-            'display': 'inline',
-        });
-        $('.btn-collapse').css({
-            'display': 'none',
-        });
-    });
-}
-*/
-

@@ -126,6 +126,16 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   margin-top: 0.5rem;
   color: #FFFFFF;
   border-color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.navbar-transparent .btn-neutral:hover, 
+.navbar-transparent .btn-neutral:focus,
+.navbar-transparent .btn-neutral:active {
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  opacity: 1;
 }
 
 /* Navbar default */
@@ -282,6 +292,18 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-color: #FFFFFF;
   margin-top: 14px;
   margin-left: 10px;
+  opacity: 0.9;
+}
+
+
+.navbar-nav > li > .btn .btn-round .btn-neutral:hover, 
+.navbar-nav > li > .btn .btn-round .btn-neutral:focus,
+.navbar-nav > li > .btn .btn-round .btn-neutral:active {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  margin-top: 14px;
+  margin-left: 10px;
+  opacity: 1;
 }
 
 /* Nav bg-img */
@@ -447,4 +469,82 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-width: 1px;
   border-color: #2CA8FF;
   color: #2CA8FF;
+}
+
+/*login and sign-in modal*/
+.modal-body
+{
+  height:320px;
+}
+#login_submit,#go_reg,#zcsubmit,#go_log,#phint
+{
+  position:relative;
+  left:5%;
+  width:90%
+}
+#dlpage
+{
+  width:100%;
+  position:absolute;top:0;
+  height:200px;
+}
+#zcpage
+{
+  visibility:hidden;
+  width:100%;
+  position:absolute;top:0;
+  height:200px;
+}
+.pagecontainer
+{
+  position:relative;top:0;
+}
+
+.hint
+{
+  height: 20px;
+  width:90%;
+  position:relative;
+  left:26%;/*改了*/
+}
+.login_input
+{
+  position: relative;
+}
+.input_name
+{
+  background-color:white!important;
+  border:0;
+  font-size: 16px;
+  font-family: Microsoft YaHei,"Open Sans",Arial,sans-serif;
+}
+#regtext
+{
+  font-size: 15px;
+}
+#login_submit
+{
+  background-color:109CFF!important;
+}
+.btn-login
+{
+  border-width: 1px;
+  border-radius: 30px !important;
+  padding: 9px 18px;
+  background-color: #1C86EE;
+  color: white;
+}
+.btn-login:hover
+{
+  border-width: 1px;
+  border-radius: 30px !important;
+  padding: 9px 18px;
+  background-color: #104E8B;
+  color: white;
+}
+/*新增加了*/
+.signinput
+{
+	width:275px!important;
+	float:right!important;
 }

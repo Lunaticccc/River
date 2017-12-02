@@ -29,13 +29,13 @@
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="glyphicon glyphicon-th-list"></span>
               </button>
-              <a class="navbar-brand" href="#">河</a>
+              <a class="navbar-brand" href="">河</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="nav-button active"><a href="#">主页</a></li>
-                <li><a href="#">热门</a></li>
+                <li class="nav-button active"><a href="">主页</a></li>
+                <li><a href="src/stories/0004.html">热门</a></li>
                 <li>
                   <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="glyphicon glyphicon-search"></i></a>
                 </li>
@@ -47,11 +47,11 @@
               </form>
               <ul class="nav navbar-nav navbar-right">
                 <!-- 已登录 -->
-                <li class="isLogged"><a href="#" class="nav-user-content">
+                <li class="hide"><a href="src/users/0000.html" class="nav-user-content">
                   <img class="nav-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
                   &nbsp;Newbee_Hao</a></li>
                 <!-- 未登录 -->                                  
-                <li class="isUnlogged"><button href="#" class="btn btn-round btn-neutral">Sign in</button></li>
+                <li class=""><button href="#" class="btn btn-round btn-neutral" data-toggle="modal" data-target="#alogin">Sign in</button></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -77,7 +77,7 @@
           <div class="col-md-8">
             <div class="river-storycontainer ">
               <div class="story-user-info">
-                <a href="#"><img class="story-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
+                <a href="src/users/0000.html"><img class="story-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
                   <div class="story-user-name">&nbsp;Newbee_Hao</div>
                 </a>
               </div>
@@ -97,31 +97,28 @@
           </div>
           <div class="col-md-4">
             <!-- 未登录  -->
-            <div class="river-card-container isUnogged">
+            <div class="river-card-container">
               <div class="river-card-title">你好，陌生人！愿意讲个故事吗？</div>
               <button type="button" class="btn btn-write write" 
                       data-toggle="modal" data-target="#write-story">
                       写故事</button>
               <hr />
               <div class="river-card-title">加入我们</div>
-              <button type="button" class="btn btn-write">注册/登录</button>
+              <button type="button" class="btn btn-write" data-toggle="modal" data-target="#alogin">注册/登录</button>
               <hr />
               <div class="river-card-title">随便逛逛</div>
-              <button type="button" class="btn btn-write">热门</button>
+              <a href="src/stories/0004.html"><button type="button" class="btn btn-write">热门</button></a>
             </div>
             <!-- 已登录 -->
-            <div class="river-card-container isLogged">
+            <div class="river-card-container hide">
                 <div class="river-card-head">我的</div>
                 <div class="river-card-section">
-                  <a href="">
+                  <a href="src/users/0000.html">
                     <img class="river-user-avatar" src="src/img/user-avatar/0000.jpg" alt="user" />
                   </a>
                   <div class="river-user-info">
-                    <a href="">
-                    <div class="river-user-name">Newbee_Hao
-                      <i class="glyphicon glyphicon-map-marker"></i>
-                      <i class="glyphicon glyphicon-map-marker"></i>
-                    </div>
+                    <a href="src/users/0000.html">
+                    <div class="river-user-name">Newbee_Hao</div>
                     </a>
                     <div class="river-user-descrb">给我幽鬼，不赢砍手！</div>
                   </div>
@@ -129,7 +126,7 @@
                 <p class="river-place"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;阿尔及利亚 伊利里亚</p>
                 <p class="river-date"><i class="glyphicon glyphicon-calendar"></i>&nbsp;<time>1996/12/21</time></p>
               </div>
-            <div class="river-card-container isLogged">
+            <div class="river-card-container hide">
               <div class="card-flex-container">
                 <div class="card-iconleft">
                   <i class="glyphicon glyphicon-pencil"></i>
@@ -212,6 +209,74 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal -->
     </div>
+
+    <!-- 注册登录 -->
+    <div class="modal fade" id="alogin" tab-index="-1" aria-labelledby="loginpage" aria-hidden="true">
+      <div class="modal-dialog" style="width:400px;">
+        <div class="modal-content" id="">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" style="font-size: 16px;">注册/登录</h4>
+          </div>
+          <div class="modal-body" id="modal-body">
+          <div class="pagecontainer">
+              <div id="dlpage"><!--css-->
+                <form role="form" action="" id="login_form" method="POST" name="login_form">
+                <br/>
+                  <div class="input-group login_input">
+                    <span class="input-group-addon input_name" id="regtext">用&nbsp;&nbsp;户&nbsp;&nbsp;名</span>
+                    <input type="text" name="username" class="form-control signinput" placeholder="请输入用户名："></input>
+                  </div><br/><br/>
+                 <div class="input-group login_input">
+                    <span class="input-group-addon input_name">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+                    <input type="password" name="reg_pw" class="form-control signinput" placeholder="请输入密码："></input>
+                  </div><br/><br/>
+                  <button type="submit" class="btn-login" id="login_submit" onclick="javascript:document.forms['login_form'].submit();">登录</button><br/><br/>
+                  <button type="button" class="btn-login" onclick="f();" id="go_reg">没有账号？点击注册<span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span></button>
+                </form>
+              </div>
+              <div id="zcpage">
+                <form role="form" action="" id="reg_form" method="POST" name="login_form">
+                <br/>
+                  <div class="form-container" id="form-container">
+                  <div class="input-group login_input">
+          <table><tr>
+                    <span class="input-group-addon input_name" id="regtext">用&nbsp;&nbsp;户&nbsp;&nbsp;名</span>
+                    <input type="text" id="reg_username" name="reg_username" class="form-control signinput" placeholder="请输入用户名："></input>
+                  </tr></table>
+          </div>
+                  <div id="username_hint" class="hint"></div>
+                  <div class="input-group login_input">
+                    <span class="input-group-addon input_name">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</span>
+                    <input type="text" id="reg_name" name="reg_name" class="form-control signinput" placeholder="请输入昵称："></input>
+                  </div>
+                  <div id="name_hint" class="hint"></div>
+                  <div class="input-group login_input">
+                    <span class="input-group-addon input_name">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+                    <input type="password" id="reg_pw" name="reg_pw" class="form-control signinput" placeholder="请输入密码："></input>
+                  </div>
+                  <div id="password_hint" class="hint"></div>
+                  <div class="input-group login_input">
+                    <span class="input-group-addon input_name">确认密码</span>
+                    <input type="password" id="reg_pw2" name="reg_pw2" class="form-control signinput" placeholder="请确认密码："></input>
+                  </div>
+                  <div id="password2_hint" class="hint"></div>
+                  <div class="input-group login_input">
+                    <span class="input-group-addon input_name">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span>
+                    <input type="text" id="reg_mail" name="reg_mail" class="form-control signinput" placeholder="请输入邮箱："></input>
+                  </div>
+                  <div id="email_hint" class="hint"></div>
+                  <div id="phint"><p id="hint" color="red"></p></div>
+                  </div>                           
+                  <button type="submit" value="reg" class="btn-login" id="zcsubmit" disabled="true" onclick="javascript:document.forms['reg_form'].submit();">注册</button><br/><br/>
+                  <button type="button" onclick="g();" class="btn-login" id="go_log">已有账号？点击登录<span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="jquery/jquery.js"></script>
     <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script src="src/js/jquery.hotkeys.js"></script>
@@ -219,5 +284,6 @@
     <script src="src/js/switch.js"></script>
     <script src="src/js/river.js"></script>
     <script src="src/js/navbar-transfer.js"></script>
+    <script src="src/js/login.js"></script>
   </body>
 </html>
