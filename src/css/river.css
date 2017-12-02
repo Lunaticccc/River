@@ -99,19 +99,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   outline: 0;
 }
 
-/* Button Styles */
-.btn {
-  border-width: 2px;
-  background-color: transparent;
-  font-weight: 400;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  padding: 8px 16px;
-  border-color: #888888;
-  color: #888888;
-}
-
-
 /* Navbar settings */
 
 .navbar {
@@ -123,15 +110,15 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .navbar-transparent .btn-neutral,
 .btn-neutral {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   color: #FFFFFF;
   border-color: #FFFFFF;
   opacity: 0.9;
 }
 
-.navbar-transparent .btn-neutral:hover, 
-.navbar-transparent .btn-neutral:focus,
-.navbar-transparent .btn-neutral:active {
+.btn-neutral:hover, 
+.btn-neutral:focus,
+.btn-neutral:active {
   margin-top: 0.5rem;
   color: #FFFFFF;
   border-color: #FFFFFF;
@@ -287,24 +274,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   height: 30px;
 }
 
-.navbar-nav > li > .btn .btn-round .btn-neutral {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
-  margin-top: 14px;
-  margin-left: 10px;
-  opacity: 0.9;
-}
-
-
-.navbar-nav > li > .btn .btn-round .btn-neutral:hover, 
-.navbar-nav > li > .btn .btn-round .btn-neutral:focus,
-.navbar-nav > li > .btn .btn-round .btn-neutral:active {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
-  margin-top: 14px;
-  margin-left: 10px;
-  opacity: 1;
-}
 
 /* Nav bg-img */
 
