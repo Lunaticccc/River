@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teresa的时间河 - 让故事流淌</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- River Stylesheet -->
+    <link rel="stylesheet" href="../css/btn.css">
+    <link rel="stylesheet" href="../css/river.css">
+    <link rel="stylesheet" href="../css/river-card.css">
+    <link rel="stylesheet" href="../css/temp.css">
+    <link rel="stylesheet" href="../css/stars.css">
+
+    <!-- IE 8 support -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <canvas id="stars"></canvas>
+    <a href="#" id="stars-trigger"></a>
+    <div id="navbar-full">
+      <div id="navbar">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="glyphicon glyphicon-th-list"></span>
+              </button>
+              <a class="navbar-brand" href="">河</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="nav-button active"><a href="">主页</a></li>
+                <li><a href="../stories/0004.html">热门</a></li>
+                <li><a href="../rivers/0000.html">时间河</a></li>
+                <li>
+                  <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="glyphicon glyphicon-search"></i></a>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left navbar-search-form" role="search">                  
+                <div class="form-group">
+                  <input type="text" value="" class="form-control" placeholder="Search...">
+                </div> 
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <!-- 已登录 -->
+                <li class=""><a href="../users/0003.html" class="nav-user-content">
+                  <img class="nav-user-avatar img-rounded" src="../img/user-avatar/0003.jpg"/>
+                  &nbsp;Teresa</a></li>
+                <!-- 未登录 -->                
+                <li class="hide"><button href="#" class="btn btn-round btn-neutral" data-toggle="modal" data-target="#alogin">注册/登录</button></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div><!--  end navbar -->
+    </div> <!-- end navBar -->
+
+    <div id="carousel">
+      <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-generic" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="slide-card-container">
+              <div class="slide-card-header">
+                2012/12/3 日本 东京
+                <a href="../stories/0006.html"><button class="btn btn-simple pull-right" style="margin: 0; padding: 0;">详情</button></a>
+              </div>
+              <div class="slide-card-section">
+                <div class="slide-story-content">
+                  <p class="slide-story">
+                    半年多的时间，我生活在北京的一片雾霾之中，有一段时间朝九晚五，有一段时间招猫逗狗，朋友三两群，知己一两个，不管是怎样的日复一日，都尚觉满意。<br>
+                    当然偶尔会想起另一个国度的年年岁岁，春天看樱花，夏天赏烟火，秋天是一地的银杏，冬天是雪中的温泉……那段日子人在其中有许多的艰难跟寸步难行，抽离开了，慢慢的都是美好的回忆。<br>
+                    几年前没想过未来，几年后没想过再回去——我把好的人生旅行定义成这样。<br>
+                    <br>
+                    没有遗憾。<br>
+                    所以我现在不担心现实如何窘迫，不恐惧人生会逐步走向麻木和重复，到今天为止我都不知道未来会怎样，甚至没有一个盼望的终点。也许我要得到的就是一步步走下去，到新的机遇里去，不会有一天惶恐自己是否已经老去，不会有一天因为疑虑而不敢下新的决定。北京也不是我最后的归处，我最后的归处在哪里，在到那之前，还有许多地方没有去，很多事情没有试。<br>
+                    <br>
+                    反正这人生，就是手持空杯又饮醉。
+                  </p>
+                </div>
+                <div class="slide-img-container">
+                  <img class="slide-img" src="../img/storyimg/0006.jpg"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="slide-card-container">
+              <div class="slide-card-header">
+                2017/11/23 列支敦士登，瓦杜兹
+                <a href="../stories/0007.html"><button class="btn btn-simple pull-right" style="margin: 0; padding: 0;">详情</button></a>
+              </div>
+              <div class="slide-card-section">
+                <div class="slide-story-content">
+                  <p class="slide-story">
+                     几个月前的一个午后，我去他家看奶奶，阳光很充足，一只老猫盘在沙发中昏昏欲睡。奶奶记不清人了，把我介绍给她时她笑着说好啊好，过一会儿又问我，你是谁呀？<br>
+                     我坐在沙发上给她梳头发，让她讲话给我听，厨房里忙碌的都是她的至亲，她经常想不起他们，她记得大概是几十年前的那些小豆丁，跟着她全国各地的跑着找部队，她要找到她跟随军队出征的男人，小豆丁们懵懵懂懂，什么都不知道。<br>
+                     整个下午，她把眼神抛向窗外，时光就像午后的浮尘，飘飘荡荡又远又近。“ 走，就走啊，我去了安徽，安徽啊，对啊安徽，还去河南，山东，去山西，就走，走……”翻来覆去，念叨着说短就短、说长又很长的人生。<br>
+                     <br>
+                     当去记忆都超越了能力范围后，奶奶的絮语就好像一种时光咒语，带来一种说不清道不明的美妙和恐惧。<br>
+                     几十年后我会记住什么？<br>
+                     欢歌笑语的时候以为人生太短，苦渡长夜时觉得人生漫无边界。关于我，前面二十多年真的是跌宕不休，我不去结论，何必多说。对于人生我具备不知道天赋于哪里的一种懒惰，我不着急，反正该过去的会过去，该开始的谁在意。<br>
+                  </p>
+                </div>
+                <div class="slide-img-container">
+                  <img class="slide-img" src="../img/storyimg/0007.jpg"/>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="slide-card-container">
+              <div class="slide-card-header">
+                2013/11/28 中国，北京
+                <a href="../stories/0008.html"><button class="btn btn-simple pull-right" style="margin: 0; padding: 0;">详情</button></a>
+              </div>
+              <div class="slide-card-section">
+                <div class="slide-story-content">
+                  <p class="slide-story">
+                    又是一年冬天了，又到了修养期，我是上了大半辈子学的人，搞得工作之后都忍不住想修个寒假。<br>
+                    现在就是有几个朋友要狠下来联系，有一些短暂断开联系的远方故人，要咬着牙去打个招呼。<br>
+                    近乡情怯的感觉是什么呢，总之与人维护一种长久的关系是我的短板，<br>
+                    想念也是种挺好的感觉，<br>
+                    我这么觉得的。<br>
+                    但是要回报给他人关怀和温暖，<br>
+                    我也是这么觉得的。<br>
+                    <br>
+                    另外，元旦就领证了，这一切真顺其自然，我从没想过我的随遇而安里还有这么好的机遇，<br>
+                    但是该来好事情，你不着急，就总会来的。<br>
+                  </p>
+                </div>
+                <div class="slide-img-container">
+                  <img class="slide-img" src="../img/storyimg/0008.jpg"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div> <!-- end carousel -->
+
+    <script src="../../jquery/jquery.js"></script>
+    <script src="../../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/switch.js"></script>
+    <script src="../js/river.js"></script>
+    <script src="../js/stars.js"></script>
+  </body>
+</html>
