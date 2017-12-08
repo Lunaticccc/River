@@ -47,11 +47,11 @@
               </form>
               <ul class="nav navbar-nav navbar-right">
                 <!-- 已登录 -->
-                <li class="hide"><a href="src/users/0000.html" class="nav-user-content">
+                <li class=""><a href="src/users/0000.html" class="nav-user-content">
                   <img class="nav-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
                   &nbsp;Newbee_Hao</a></li>
-                <!-- 未登录 -->                
-                <li class=""><button href="#" class="btn btn-round btn-neutral" data-toggle="modal" data-target="#alogin">注册/登录</button></li>
+                <!-- 未登录 -->                                  
+                <li class="hide"><button href="#" class="btn btn-round btn-neutral" data-toggle="modal" data-target="#alogin">Sign in</button></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -98,7 +98,7 @@
           </div>
           <div class="col-md-4" id="sidebar">
             <!-- 未登录  -->
-            <div class="river-card-container hidden-xs">
+            <div class="river-card-container hide">
               <div class="river-card-title">你好，陌生人！愿意讲个故事吗？</div>
               <button type="button" class="btn btn-write write" 
                       data-toggle="modal" data-target="#write-story">
@@ -111,7 +111,7 @@
               <a href="src/stories/0004.html"><button type="button" class="btn btn-write">热门</button></a>
             </div>
             <!-- 已登录 -->
-            <div class="river-card-container hide">
+            <div class="river-card-container hidden-xs">
                 <div class="river-card-head">我的</div>
                 <div class="river-card-section">
                   <a href="src/users/0000.html">
@@ -127,7 +127,7 @@
                 <p class="river-place"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;阿尔及利亚 伊利里亚</p>
                 <p class="river-date"><i class="glyphicon glyphicon-calendar"></i>&nbsp;<time>1996/12/21</time></p>
               </div>
-            <div class="river-card-container hide">
+            <div class="river-card-container hidden-xs">
               <div class="card-flex-container">
                 <div class="card-iconleft">
                   <i class="glyphicon glyphicon-pencil"></i>
@@ -136,7 +136,9 @@
                 </div>
                 <div class="card-iconright">
                   <i class="glyphicon glyphicon-book"></i>
-                  <button type="button" class="btn btn-simple">读故事</button>
+                  <a href="src/stories/0003.html">
+                    <button type="button" class="btn btn-simple">读故事</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -149,6 +151,7 @@
               <a href="src/stories/0000.html"><img class="story-user-avatar img-rounded" src="src/img/user-avatar/0000.jpg"/>
                 <div class="story-user-name">&nbsp;Newbee_Hao</div>
               </a>
+
               </div>
               <div class="river-story-time"><i class="glyphicon glyphicon-time"></i><time>&nbsp;2017/11/23 13:25</time></div>
               <div class="river-story-place"><i class="glyphicon glyphicon-map-marker"></i><span>&nbsp;列支敦士登，瓦杜兹</span></div>
@@ -164,7 +167,7 @@
                 <div class="river-imgcontainer">
                   <img class="river-img" src="src/img/storyimg/0000.jpg" alt="story image"/>            
                 </div>
-                <button type="button" class="btn btn-simple btn-collapse"><i class="glyphicon glyphicon-chevron-up"></i>收起</button>
+<!--            <button type="button" class="btn btn-simple btn-collaspse" onclick="collapse()"><i></i>收起</button>   -->
               </div>
             </div>
           </div>
@@ -193,7 +196,7 @@
                   <img class="img-rounded img-responsive river-img" src="src/img/storyimg/0001.jpg" alt="story image"/>
                   诸位，你们体会过被文化人吊起来打的感觉吗？
                 </p>
-                <button type="button" class="btn btn-simple btn-collapse"><i class="glyphicon glyphicon-chevron-up"></i>收起</button>
+<!--            <button type="button" class="btn btn-simple btn-collaspse" onclick="collapse()"><i></i>收起</button>   -->
               </div>
             </div>
           </div>
@@ -214,7 +217,7 @@
                   <button type="button" class="btn btn-simple btn-dropdown"><i class="glyphicon glyphicon-chevron-down"></i>展开</button>                  
                   <img class="img-rounded img-responsive river-img" src="src/img/storyimg/0003.jpg" alt="story image"/>
                 </p>
-                <button type="button" class="btn btn-simple btn-collapse"><i class="glyphicon glyphicon-chevron-up"></i>收起</button>
+<!--            <button type="button" class="btn btn-simple btn-collaspse" onclick="collapse()"><i></i>收起</button>   -->
               </div>
             </div>
           </div>
@@ -255,7 +258,6 @@
                   <button type="button" class="btn btn-simple btn-dropdown"><i class="glyphicon glyphicon-chevron-down"></i>展开</button>                  
                   <img class="img-rounded img-responsive river-img" src="src/img/storyimg/0005.jpg" alt="story image"/>
                 </p>
-                <button type="button" class="btn btn-simple btn-collapse"><i class="glyphicon glyphicon-chevron-up"></i>收起</button>
               </div>
             </div>
           </div>
@@ -273,9 +275,7 @@
     </div>
 
     <!-- 底部按钮 -->
-    <button id="corner" class="btn btn-simple corner-button">
-      <i class="glyphicon glyphicon-chevron-up"></i>
-    </button>
+    <button id="corner" class="btn btn-simple corner-button"><i class="glyphicon glyphicon-chevron-up"></i></button>
 
 
     <!-- 输入 -->

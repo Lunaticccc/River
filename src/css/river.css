@@ -83,6 +83,11 @@ div[data-role="editor-toolbar"] {
 
 /* Link Style  */
 
+a:hover, a:focus, a:visited {
+  opacity: 0.93;
+  text-decoration: none;
+}
+
 footer > p > a { color: #2CA8FF; }
 footer > p > a:hover,
 footer > p > a:focus {
@@ -104,8 +109,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .navbar {
   border: 0;
   font-size: 16px;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 
 .navbar-transparent .btn-neutral,
@@ -118,8 +123,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .btn-neutral:hover, 
 .btn-neutral:focus,
-.btn-neutral:active {
-  margin-top: 0.5rem;
+.btn-neutral:active:hover,
+.btn-neutral:active:focus,
+.btn-neutral:visited {
+  margin-top: 0.6rem;
   color: #FFFFFF;
   border-color: #FFFFFF;
   opacity: 1;
@@ -156,7 +163,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > li > a:focus{
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a:visited,
+.navbar-default .navbar-nav > li > a:visited {
   color: #FFFFFF;
   opacity: 1;
   background-color: transparent;
@@ -172,7 +181,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .navbar-header > .navbar-toggle, 
 .navbar-header > .navbar-toggle:hover,
 .navbar-header > .navbar-toggle:focus,
-.navbar-header > .navbar-toggle:active {
+.navbar-header > .navbar-toggle:active,
+.navbar-header > .navbar-toggle:visited {
   background-color: transparent;
   border: 0;
 }
@@ -210,7 +220,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .navbar-transparent .navbar-nav > .active > a:hover,
 .navbar-transparent .navbar-nav > li > a:hover,
 .navbar-transparent .navbar-nav > .active > a:focus,
-.navbar-transparent .navbar-nav > li > a:focus{
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .active > a:visited,
+.navbar-transparent .navbar-nav > li > a:visited {
   color: #FFFFFF;
   opacity: 1;
   background-color: transparent;
@@ -275,7 +287,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 
-/* Nav bg-img */
+/* Header */
 
 .header-container {
   display: block;
@@ -319,6 +331,29 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 .header-divider {
   width: 20%;
+}
+
+.header-arrow {
+  font-size: 35px;
+  color: white;
+  width: 50px;
+  line-height: 52px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20px;
+  left: 48.7%;
+  z-index: 1029;
+  opacity: 0.9;
+}
+
+.header-arrow:hover,
+.header-arrow:focus,
+.header-arrow:active,
+.header-arrow:visited {
+  opacity: 1;
+  color: white;
 }
 
 /* 
@@ -388,12 +423,21 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .btn-dropdown {
-  display: inline;
-  text-align: right;
+  display: block;
+}
+
+.btn-dropdown > i {
+  margin-right: 10px;
+  padding-top: 3px;
 }
 
 .btn-collapse {
-  display: inline;
+  display: block;
+}
+
+.btn-collapse > i {
+  margin-right: 10px;
+  padding-top: 3px;
 }
 
 .btn-write,
@@ -417,7 +461,22 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   font-weight: 400;
 }
 
-/*  Sidebar Logged & Unlogged  */
+/* ======================
+
+      Attached Patterns
+
+   ======================
+*/
+
+/*  Sidebar  */
+.is-fixed {
+  position: fixed;
+  z-index: 1024;
+  top: 50px;
+  left: 62.85%;
+  width: 390px;
+}
+
 .isUnlogged {
   display: block !important;
 }
@@ -426,6 +485,24 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   display: none !important;
 }
 
+/* Corner-Button */
+.corner-button {
+  color: #0571B9;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  position: fixed;
+  left: 95%;
+  top: 90%;
+  z-index: 1024;
+}
+
+.corner-button:hover,
+.corner-button:focus,
+.corner-button:active,
+.corner-button:visited {
+  color: #0571B9;
+
+}
 
 /* Editor */
 .btn-toolbar {

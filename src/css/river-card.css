@@ -58,9 +58,9 @@
   color: #ffcf00;
 }
 
-.card-iconleft > .btn-simple:hover,
-.card-iconleft > .btn-simple:focus,
-.card-iconleft > .btn-simple:active {
+.card-iconleft > button:hover,
+.card-iconleft > button:focus,
+.card-iconleft > button:active {
   color: #ffcf00;
 }
 
@@ -68,8 +68,8 @@
   color: #43d480;
 }
 
-.card-iconright > .btn-simple:hover,
-.card-iconright > .btn-simple:focus,
-.card-iconright > .btn-simple:active {
+.card-iconright > a > button:hover,
+.card-iconright > a > button:focus,
+.card-iconright > a > button:active {
   color: #43d480;
 }
