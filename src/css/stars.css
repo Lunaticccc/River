@@ -12,45 +12,23 @@
   background-image: none;
 }
 
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-}
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Carousel base class */
 .carousel {
-  height: 700px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   margin-bottom: 60px;
 }
-/* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+
 .carousel .item {
-  height: 700px;
+  height: 100%;
   background-color: transparent;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 700px;
 }
 
 /*
@@ -73,15 +51,16 @@
   position: absolute;
   top: 0; left: 0;
   bottom: 0; right: 0;
+  background-attachment: fixed;
   -webkit-filter: blur(20px);
   -moz-filter: blur(20px);
   -ms-filter: blur(20px);
   -o-filter: blur(20px);
-  filter: blur(20px); 
+  filter: blur(20px);
   z-index: -2;
   background-color: rgba(195, 205, 225, 0.5);
 }
-
+/*   src/css/stars.css   */
 .slide-card-header {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
