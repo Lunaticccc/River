@@ -127,7 +127,7 @@ $(document).ready(function(){
 
 /* Scroll Spy for Sidebar & Corner Button */
 $(document).scroll(function(){
-    if ( $(this).scrollTop() > 680 ) {
+    if ( $(this).scrollTop() > 720 ) {
         $('#sidebar').addClass('is-fixed');
     }
     else {
